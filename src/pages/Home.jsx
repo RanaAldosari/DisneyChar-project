@@ -23,7 +23,7 @@ function Home() {
   const uploadInfo = () => {
     axios.post(apiUrl, {
       charName,
-      charImage,
+      charImage:charImage,
       gender
     })
       .then((res) => {
