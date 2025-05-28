@@ -23,7 +23,7 @@ function Home() {
   const uploadInfo = () => {
     axios.post(apiUrl, {
       charName,
-      charImage:charImage,
+      charImage,
       gender
     })
       .then((res) => {
@@ -97,7 +97,7 @@ function Home() {
             <div key={char.id} className="text-center p-4">
               <img
                 className="rounded-full w-40 h-40 object-cover mx-auto border-2 border-pink-800"
-                src={char.charimage}
+                src={char.charImage}
                 alt={char.charName}
               />
               <h3 className="font-semibold mt-2">{char.charName}</h3>
